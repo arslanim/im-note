@@ -10,12 +10,15 @@ import {NotesPage} from "../pages/notes/notes";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import {NoteItemComponent} from "../components/note-item/note-item.component";
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    NotesPage
+    NotesPage,
+    NoteItemComponent
   ],
   imports: [
     BrowserModule,
