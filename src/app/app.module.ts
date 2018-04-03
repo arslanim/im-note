@@ -11,6 +11,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import {NoteItemComponent} from "../components/note-item/note-item.component";
+import {TagItemComponent} from "../components/tag/tag-item/tag-item.component";
+import {TagBadgeComponent} from "../components/tag/tag-badge/tag-badge.component";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {NoteItemComponent} from "../components/note-item/note-item.component";
     HomePage,
     ListPage,
     NotesPage,
-    NoteItemComponent
+    NoteItemComponent,
+    TagItemComponent,
+    TagBadgeComponent
   ],
   imports: [
     BrowserModule,
