@@ -6,7 +6,7 @@ import {Note} from "../../models/domain/note.interface";
   templateUrl: 'note-item.html'
 })
 export class NoteItemComponent implements OnInit {
-  @Input() noteItem: Note
+  @Input() note: Note
 
   constructor() {}
 

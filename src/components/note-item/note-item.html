@@ -3,15 +3,16 @@
     <ion-row align-self-center>
       <ion-col col-9>
         <ion-row>
-          {{ noteItem.title }}
+          <h2>{{ note.title }}</h2>
         </ion-row>
         <ion-row>
           <ion-col col-12>
+            <tag-badge *ngFor="let tag of note.tags" [tag]="tag"></tag-badge>
           </ion-col>
         </ion-row>
       </ion-col>
       <ion-col col-3 text-center align-self-center="">
-        <ion-icon name="trash"></ion-icon>
+        <ion-icon name="trash" class="trash-icon"></ion-icon>
       </ion-col>
     </ion-row>
   </ion-grid>
