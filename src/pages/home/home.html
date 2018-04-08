@@ -1,11 +1,4 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+<page-header [page]="page"></page-header>
 
 <ion-content>
   <tag-item *ngFor="let tag of tags" [tag]="tag"></tag-item>

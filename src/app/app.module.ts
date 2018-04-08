@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {NoteItemComponent} from "../components/note-item/note-item.component";
 import {TagItemComponent} from "../components/tag/tag-item/tag-item.component";
 import {TagBadgeComponent} from "../components/tag/tag-badge/tag-badge.component";
+import {PageHeaderComponent} from "../components/page-header/page-header.component";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {TagBadgeComponent} from "../components/tag/tag-badge/tag-badge.component
     NotesPage,
     NoteItemComponent,
     TagItemComponent,
-    TagBadgeComponent
+    TagBadgeComponent,
+    PageHeaderComponent
   ],
   imports: [
     BrowserModule,
