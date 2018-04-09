@@ -1,11 +1,11 @@
 <ion-card>
   <ion-grid>
-    <ion-row align-self-center>
+    <ion-row align-self-center (click)="view(tag)">
       <ion-col col-9>
         <h2>{{ tag.name }}</h2>
       </ion-col>
       <ion-col col-3 text-center align-self-center="">
-        <ion-icon name="trash" class="trash-icon"></ion-icon>
+        <ion-icon name="trash" class="trash-icon" (click)="delete(tag)"></ion-icon>
       </ion-col>
     </ion-row>
   </ion-grid>

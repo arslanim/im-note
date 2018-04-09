@@ -14,6 +14,7 @@ import {NoteItemComponent} from "../components/note-item/note-item.component";
 import {TagItemComponent} from "../components/tag/tag-item/tag-item.component";
 import {TagBadgeComponent} from "../components/tag/tag-badge/tag-badge.component";
 import {PageHeaderComponent} from "../components/page-header/page-header.component";
+import {TagListComponent} from "../components/tag/tag-list/tag-list.component";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {PageHeaderComponent} from "../components/page-header/page-header.compone
     NoteItemComponent,
     TagItemComponent,
     TagBadgeComponent,
-    PageHeaderComponent
+    PageHeaderComponent,
+    TagListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,7 @@
+<tag-item
+  *ngFor="let tag of tags"
+  [tag]="tag"
+  (onDelete)="delete($event)"
+  (onView)="view($event)"
+>
+</tag-item>

@@ -39,26 +39,5 @@ export class HomePage extends PageAbstract{
       {id: 'dsfsdf', text: 'askdka', title: 'sdasdas', createDate: 'sdfdsfds', tags: [{id: 'sdfsf', name:'sdasdasd', color: 'black'}]},
       {id: 'dsfsdf', text: 'askdka', title: 'sdasdas', createDate: 'sdfdsfds', tags: [{id: 'sdfsf', name:'sdasdasd', color: 'black'}]},
     ];
-
-    this.tags = [
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-      {id: 'asfasf', color: 'red', name: 'foo'},
-    ];
   }
 }
