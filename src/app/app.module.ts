@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import {NotesPage} from "../pages/notes/notes";
+import {TagsPage} from "../pages/tags/tags";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,6 +23,7 @@ import {TagListComponent} from "../components/tag/tag-list/tag-list.component";
     HomePage,
     ListPage,
     NotesPage,
+    TagsPage,
     NoteItemComponent,
     TagItemComponent,
     TagBadgeComponent,
@@ -37,7 +39,8 @@ import {TagListComponent} from "../components/tag/tag-list/tag-list.component";
     MyApp,
     HomePage,
     ListPage,
-    NotesPage
+    NotesPage,
+    TagsPage
   ],
   providers: [
     StatusBar,
