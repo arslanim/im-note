@@ -1,7 +1,12 @@
+<ion-fab bottom right class="add-fab">
+  <button ion-fab mini (click)="edit()"><ion-icon name="add"></ion-icon></button>
+</ion-fab>
+
 <tag-item
   *ngFor="let tag of tags"
   [tag]="tag"
   (onDelete)="delete($event)"
   (onView)="view($event)"
+  (onEdit)="edit($event)"
 >
 </tag-item>

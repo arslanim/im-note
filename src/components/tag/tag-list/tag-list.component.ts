@@ -1,5 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {Tag} from "../../../models/domain/tag.interface";
+import {EditTagModal} from "../../modals/edit-tag/_edit-tag.modal";
+import {ModalController} from "ionic-angular";
 
 @Component({
   selector: 'tag-list',
@@ -9,7 +11,7 @@ export class TagListComponent implements OnInit {
 
   tags: Tag[]
 
-  constructor() {
+  constructor(private modalController: ModalController) {
     this.tags = [
       {id: '1', color: 'red', name: 'foo'},
       {id: '2', color: 'red', name: 'foo'},
@@ -30,6 +32,16 @@ export class TagListComponent implements OnInit {
       {id: '17', color: 'red', name: 'foo'},
       {id: '18', color: 'red', name: 'foo'},
     ]
+  }
+
+  edit(tag?: Tag) {
+    let modal = this.modalController.create(EditTagModal, {model: tag})
+
+    modal.onDidDismiss(data => {
+      console.log(data)
+    })
+
+    modal.present()
   }
 
   delete(tag: Tag) {

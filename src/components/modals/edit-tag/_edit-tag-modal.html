@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Edit tag</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-fab top right edge>
+    <button ion-fab mini (click)="dismiss(response)"><ion-icon name="close"></ion-icon></button>
+  </ion-fab>
+
+  <form [formGroup]="form" (submit)="submit(form)">
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input type="text" [formControl]="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Color</ion-label>
+      <ion-input type="text" [formControl]="color"></ion-input>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12 text-right="">
+          <button ion-button type="submit" [disabled]="!form.valid" round>Save</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+</ion-content>
